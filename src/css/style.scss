@@ -1,0 +1,20 @@
+@import "general/fonts";
+
+@import "lib/bootstrap/functions";
+@import "lib/bootstrap/variables";
+@import "lib/bootstrap/mixins";
+@import "lib/bootstrap/utilities";
+@import "lib/bootstrap/transitions";
+@import "lib/bootstrap/modal";
+
+/* General */
+@import "mixins/media";
+@import "general/main";
+@import "general/header";
+@import "general/footer";
+
+/* BEM */
+@import "bem/bem-block";
+
+/* Index Page */
+@import "includes/index/index-block";

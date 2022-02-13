@@ -1,0 +1,32 @@
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    block head
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
+      title #{title}
+      link(rel="preload", href="fonts/OpenSans-Regular.woff2", as="font")
+      link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+      link(rel="icon", href="img/favicon.ico", type="image/x-icon")
+      if swiperCSS
+        link(rel="stylesheet", href="css/lib/swiper-bundle.min.css")
+      link(rel="stylesheet", href="css/style.min.css")
+  body(class="" + bodyClass)
+    header(class="" + headerClass)
+      block header
+        include header
+    block main
+    footer(class="" + footerClass)
+      block footer
+        include footer
+    block scripts
+      script(src="js/lib/jquery-3.6.0.min.js")
+      script(src="js/lib/bootstrap.bundle.min.js")
+      if swiperJS
+        script(src="js/lib/swiper-bundle.min.js")
+      if gsapJS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js")
+      script(src="js/script.min.js")

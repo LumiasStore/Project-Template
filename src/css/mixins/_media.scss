@@ -1,0 +1,55 @@
+@mixin max-width-1279 {
+
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin max-width-1023 {
+
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin max-width-767 {
+
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-width-custom($width) {
+
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min-width-768 {
+
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-width-1024 {
+
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin min-width-1280 {
+
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin min-width-custom($width) {
+
+  @media (min-width: $width) {
+    @content;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "rules": {
+    "max-len": 0,
+    "no-undef": 0,
+    "new-cap": 0,
+    "require-jsdoc": 0,
+    "no-inner-declarations": 0,
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error",
+          "log"
+        ]
+      }
+    ]
+  }
+}

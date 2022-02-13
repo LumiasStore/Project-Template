@@ -1,0 +1,97 @@
+$OpenSans: "Open Sans", Arial, Helvetica, sans-serif;
+$white: #ffffff;
+$black: #000000;
+
+html, body, h1, h2, h3, h4, h5, h6, p, button, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $OpenSans;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.375;
+  color: $black;
+  background: $white;
+  overflow-x: hidden;
+}
+
+svg {
+  display: inline-block;
+  fill: currentColor;
+  stroke: none;
+}
+
+a {
+  display: inline-block;
+  color: $black;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}

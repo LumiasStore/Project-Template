@@ -1,0 +1,16 @@
+extends ../general/layout.pug
+
+block variables
+    - let title = "Project Template"
+    - let bodyClass = "index-body"
+    - let mainClass = "index-main"
+    - let headerClass = "header"
+    - let footerClass = "footer"
+    - let swiperCSS = true
+    - let swiperJS = true
+    - let gsapJS = true
+
+block main
+    main(class="" + mainClass)
+      include ../includes/index/index-block
+      include ../bem/bem-block
